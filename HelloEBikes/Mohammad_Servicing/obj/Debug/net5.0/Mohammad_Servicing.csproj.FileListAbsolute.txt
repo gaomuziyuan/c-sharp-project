@@ -1,0 +1,15 @@
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\Mohammad_Servicing.deps.json
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\Mohammad_Servicing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\ref\Mohammad_Servicing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\Mohammad_Servicing.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\AppSecurity.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\bin\Debug\net5.0\AppSecurity.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.csproj.AssemblyReference.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.AssemblyInfoInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.AssemblyInfo.cs
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.csproj.CoreCompileInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.csproj.CopyComplete
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\ref\Mohammad_Servicing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Mohammad_Servicing\obj\Debug\net5.0\Mohammad_Servicing.pdb

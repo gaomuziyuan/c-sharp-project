@@ -1,0 +1,253 @@
+﻿@page "{SelectedVendor?}"
+@model WebApp.Pages.Admin.PurchasingModel
+@{
+}
+
+<h1>Purchasing</h1>
+
+@section CustomCSS{
+    <style>
+        :root {
+            --max-body-width: 70rem;
+            --info-color: #0dcbd7;
+            --default-color: #d4c7c7;
+        }
+
+        .setflex {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+            .setflex Label {
+                margin: 0 25px 0 0;
+            }
+
+        .smallbox {
+            width: 70px;
+        }
+    </style>
+}
+
+@if (Model.HasFeedBack)
+{
+
+    <blockquote class="success">@Model.FeedBackMessage</blockquote>
+}
+
+@if (Model.HasError)
+{
+    <blockquote class="error">@Model.ErrorMessage</blockquote>
+}
+
+
+<form method="post">
+    <div class="setflex">
+        <label>
+            <select asp-for="SelectedVendor">
+                <option>Select a vendor</option>
+                @foreach (var vendor in Model.AllVendors)
+                {
+                    <option value="@vendor.VendorId">@vendor.VendorName</option>
+                }
+            </select>
+            <br />&nbsp;
+            <button type="submit" asp-page-handler="FindOrder">Find Order</button>
+        </label>
+
+        <label>
+            @if (Model.CurrentVendor != null)
+            {
+                <span>
+                    Phone: @Model.CurrentVendor.Phone <br />
+                    City: @Model.CurrentVendor.City<br />
+                    PO #: @Model.CurrentVendor.PurchaseOrder.PurchaseOrderNumber
+                </span>
+            }
+        </label>
+    </div>
+
+    @if (Model.CurrentVendor != null)
+    {
+<div>
+    @if (Model.CurrentVendor.PurchaseOrder.PurchaseOrderId == null)
+    {
+        <button type="submit" asp-page-handler="Insert"
+                style="background-color:var(--info-color)">
+            New Order
+        </button>
+        <button type="submit" asp-page-handler="Update" disabled
+                style="background-color:var(--info-color)">
+            Update Order
+        </button>
+    }
+    else
+    {
+        <button type="submit" asp-page-handler="Insert" disabled
+                style="background-color:var(--info-color)">
+            New Order
+        </button>
+        <button type="submit" asp-page-handler="Update"
+                style="background-color:var(--info-color)">
+            Update Order
+        </button>
+    }
+
+
+
+
+    <button type="submit" asp-page-handler="Place"
+            style="background-color:var(--success-color)">
+        Place Order
+    </button>
+    @if (Model.CurrentVendor.PurchaseOrder.PurchaseOrderId != null)
+    {
+        <button type="submit" asp-page-handler="Delete"
+                style="background-color:var(--danger-color)">
+            Delete Order
+        </button>
+    }
+    else
+    {
+        <button type="submit" asp-page-handler="Delete" disabled
+                style="background-color:var(--danger-color)">
+            Delete Order
+        </button>
+    }
+    <button type="submit" asp-page-handler="Clear"
+            style="background-color:var(--danger-color)">
+        Clear
+    </button>
+
+
+    <div>
+        <h3>Purchase Order</h3>
+
+        <label>
+            Subtotal:
+            <input name="Model.CurrentSubtotal" value="@Model.CurrentSubtotal" />
+        </label>
+        <label>
+            GST:
+            <input name="Model.GST" value="@Model.CurrentGST" />
+        </label>
+        <label>
+            Total:
+            <input name="Model.Total" value="@Model.CurrentTotal" />
+        </label>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>QOH</th>
+                    <th>ROL</th>
+                    <th>QOO</th>
+                    <th>QTO</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PurchaseOrderDetails)
+                {
+                    <tr>
+                        <td>
+                            <button type="submit" name="PartToRemove" value="@item.PartId" asp-page-handler="RemovePart">Remove</button>
+                        </td>
+                        <td>
+                            @item.PartId
+                            <input type="hidden" name="PurchaseOrderDetails.Index" value="@item.PartId" />
+                            <input type="hidden" name="PurchaseOrderDetails[@item.PartId].PartId" value="@item.PartId" />
+                        </td>
+                        <td>
+                            @item.Description
+                            <input type="hidden" name="PurchaseOrderDetails[@item.PartId].Description" value="@item.Description" />
+                        </td>
+                        <td>
+                            @item.QuantityOnHand
+                            <input type="hidden" name="PurchaseOrderDetails[@item.PartId].QuantityOnHand" value="@item.QuantityOnHand" />
+                        </td>
+                        <td>
+                            @item.ReorderLevel
+                            <input type="hidden" name="PurchaseOrderDetails[@item.PartId].ReorderLevel" value="@item.ReorderLevel" />
+                        </td>
+                        <td>
+                            @item.QuantityOnOrder
+                            <input type="hidden" name="PurchaseOrderDetails[@item.PartId].QuantityOnOrder" value="@item.QuantityOnOrder" />
+                        </td>
+                        <td>
+                            <input name="PurchaseOrderDetails[@item.PartId].QuantityToOrder" value="@item.QuantityToOrder" />
+                        </td>
+                        <td>
+                            <input name="PurchaseOrderDetails[@item.PartId].Price" value="@item.Price" />
+                        </td>
+                        <td>
+                            <button type="submit" name="PartToUpdate" value="@item.PartId" asp-page-handler="Refresh">Refresh</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        <h3>Parts Inventory</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>QOH</th>
+                    <th>ROL</th>
+                    <th>QOO</th>
+                    <th>Buffer</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PartsInventory)
+                {
+                    <tr>
+                        <td>
+                            @item.PartId
+                            <input type="hidden" name="PartsInventory.Index" value="@item.PartId" />
+                            <input type="hidden" name="PartsInventory[@item.PartId].PartId" value="@item.PartId" />
+                        </td>
+                        <td>
+                            @item.Description
+                            <input type="hidden" name="PartsInventory[@item.PartId].Description" value="@item.Description" />
+                        </td>
+                        <td>
+                            @item.QuantityOnHand
+                            <input type="hidden" name="PartsInventory[@item.PartId].QuantityOnHand" value="@item.QuantityOnHand" />
+                        </td>
+                        <td>
+                            @item.ReorderLevel
+                            <input type="hidden" name="PartsInventory[@item.PartId].ReorderLevel" value="@item.ReorderLevel" />
+                        </td>
+                        <td>
+                            @item.QuantityOnOrder
+                            <input type="hidden" name="PartsInventory[@item.PartId].QuantityOnOrder" value="@item.QuantityOnOrder" />
+                        </td>
+                        <td>
+                            @item.Buffer
+                            <input type="hidden" name="PartsInventory[@item.PartId].Buffer" value="@item.Buffer" />
+                        </td>
+                        <td>
+                            @item.Price
+                            <input type="hidden" name="PartsInventory[@item.PartId].Price" value="@item.Price" />
+                        </td>
+
+                        <td>
+                            <button type="submit" name="PartToAdd" value="@item.PartId" asp-page-handler="AddPart">Add</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+    }
+</form>

@@ -1,0 +1,12 @@
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\bin\Debug\net5.0\Colyn_Purchasing.deps.json
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\bin\Debug\net5.0\Colyn_Purchasing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\bin\Debug\net5.0\ref\Colyn_Purchasing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\bin\Debug\net5.0\Colyn_Purchasing.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.AssemblyInfoInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.AssemblyInfo.cs
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.csproj.CoreCompileInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\ref\Colyn_Purchasing.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\Colyn_Purchasing\obj\Debug\net5.0\Colyn_Purchasing.csproj.AssemblyReference.cache

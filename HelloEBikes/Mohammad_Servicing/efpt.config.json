@@ -1,0 +1,73 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "EbikeServicingContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": "DAL",
+   "OutputPath": "Entities",
+   "ProjectRootNamespace": "Mohammad_Servicing",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Categories]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Coupons]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Customers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CustomerVehicles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Employees]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[JobDetailParts]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[JobDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Jobs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Parts]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StandardJobs]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-MIB4QIP.eBike_DMIT2018",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

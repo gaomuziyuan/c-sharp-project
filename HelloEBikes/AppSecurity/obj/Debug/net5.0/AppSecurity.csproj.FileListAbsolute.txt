@@ -1,0 +1,12 @@
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\bin\Debug\net5.0\AppSecurity.deps.json
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\bin\Debug\net5.0\AppSecurity.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\bin\Debug\net5.0\ref\AppSecurity.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\bin\Debug\net5.0\AppSecurity.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.AssemblyInfoInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.AssemblyInfo.cs
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.csproj.CoreCompileInputs.cache
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\ref\AppSecurity.dll
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.pdb
+D:\Programmer\DMIT2018\sep-2021-e01-project-hello-employment\HelloEBikes\AppSecurity\obj\Debug\net5.0\AppSecurity.csproj.AssemblyReference.cache
